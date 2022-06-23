@@ -1,15 +1,9 @@
-tasks = [
-    { "description": "Wash Dishes", "completed": False, "time_taken": 10 },
-    { "description": "Clean Windows", "completed": False, "time_taken": 15 },
-    { "description": "Make Dinner", "completed": True, "time_taken": 30 },
-    { "description": "Feed Cat", "completed": False, "time_taken": 5 },
-    { "description": "Walk Dog", "completed": True, "time_taken": 60 },
-]
 
 # Functions to complete:
 
 
 def get_tasks_by_status(list, status):
+    ### is there a verison of this where refatoring the arg status is not necessary??
     if status == "completed":
         status = True
     elif status == "uncompleted":
@@ -21,6 +15,8 @@ def get_tasks_by_status(list, status):
         else:
             pass
     return tasks_by_status
+    
+
 
 ## Get a list of uncompleted tasks
 def get_uncompleted_tasks(list):
